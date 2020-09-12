@@ -20,7 +20,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/BrickBusterGame" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1hN5eS9PWaC8sgs3wGRXShbtsXe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -71,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599838803735</updated>
       <workItem from="1599838807165" duration="625000" />
-      <workItem from="1599840160442" duration="10662000" />
+      <workItem from="1599840160442" duration="11786000" />
     </task>
     <servers />
   </component>
@@ -83,22 +83,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1599841255577" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1599871898588">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1599881017234">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599871898588" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1599871898588">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599881017234" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1599881017229">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599871898588" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1599871898588">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599881017229" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1599881017229">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599871898588" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1599871898588">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599881017229" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1599881017233">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599871898588" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599881017233" />
     <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1599840160999">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

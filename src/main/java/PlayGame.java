@@ -9,15 +9,16 @@ import java.awt.event.KeyListener;
 public class PlayGame extends JPanel implements KeyListener, ActionListener {
     private boolean play= false;
     private int score =0;
-    private int bricks= 27;
+    private int bricks= 54;
     private Timer timer;
-    private int delay= 8;
+    private int delay= 6;
     private int barX= 310;
     private int ballX= 120;
     private int ballY= 350;
     private int ballXDierction= -1;
     private int ballYDirection= -2;
     private BrickGenerator brickGenerator;
+    private int level=1;
 
 
     public PlayGame() {
@@ -36,6 +37,11 @@ public class PlayGame extends JPanel implements KeyListener, ActionListener {
 
         //Creating Map for Bricks
         brickGenerator.draw((Graphics2D) graphics);
+
+        //Display Level
+        graphics.setColor(Color.ORANGE);
+        graphics.setFont(new Font("serif",Font.BOLD, 25));
+        graphics.drawString("Level: "+level,50,30);
 
         //Display Scores
         graphics.setColor(Color.ORANGE);
@@ -162,8 +168,8 @@ public class PlayGame extends JPanel implements KeyListener, ActionListener {
                 ballYDirection=-2;
                 barX= 310;
                 score=0;
-                bricks=21;
-                brickGenerator= new BrickGenerator(3,7);
+                bricks=54;
+                brickGenerator= new BrickGenerator(6,9);
                 repaint();
             }
         }
