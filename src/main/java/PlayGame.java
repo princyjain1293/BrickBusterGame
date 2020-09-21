@@ -9,9 +9,9 @@ import java.awt.event.KeyListener;
 public class PlayGame extends JPanel implements KeyListener, ActionListener {
     private boolean play= false;
     private int score =0;
-    private int bricks= 54;
+    private int bricks= 24;
     private Timer timer;
-    private int delay= 6;
+    private int delay= 8;
     private int barX= 310;
     private int ballX= 120;
     private int ballY= 350;
@@ -22,7 +22,7 @@ public class PlayGame extends JPanel implements KeyListener, ActionListener {
 
 
     public PlayGame() {
-        brickGenerator= new BrickGenerator(6,9);
+        brickGenerator= new BrickGenerator(3,8);
         addKeyListener(this);
         setFocusable(true);
         setFocusTraversalKeysEnabled(true);
@@ -43,10 +43,14 @@ public class PlayGame extends JPanel implements KeyListener, ActionListener {
         graphics.setFont(new Font("serif",Font.BOLD, 25));
         graphics.drawString("Level: "+level,50,30);
 
+        //Display Speed
+        graphics.setColor(Color.ORANGE);
+        graphics.setFont(new Font("serif",Font.BOLD, 25));
+        graphics.drawString("Delay: "+delay,300,30);
         //Display Scores
         graphics.setColor(Color.ORANGE);
         graphics.setFont(new Font("serif",Font.BOLD, 25));
-        graphics.drawString("Score: "+score,590,30);
+        graphics.drawString("Score: "+score,560,30);
 
         // Creating Borders
         graphics.setColor(Color.CYAN);
@@ -110,7 +114,7 @@ public class PlayGame extends JPanel implements KeyListener, ActionListener {
                         Rectangle ballRectangle= new Rectangle(ballX,ballY,20,20);
                         Rectangle brickRect= rectangle;
 
-                        //check if ball inetrsects the brick
+                        //check if ball intersects the brick
                         if(ballRectangle.intersects(brickRect)){
                             brickGenerator.setBrickValue(0,i,j);
                             bricks--;
@@ -161,6 +165,14 @@ public class PlayGame extends JPanel implements KeyListener, ActionListener {
 
         if(e.getKeyCode()==KeyEvent.VK_ENTER){
             if(!play){
+                if(bricks==0){
+                    level++;
+                    delay--;
+                }
+                else{
+                    level=1;
+                    delay=8;
+                }
                 play=true;
                 ballX=120;
                 ballY= 350;
@@ -168,8 +180,8 @@ public class PlayGame extends JPanel implements KeyListener, ActionListener {
                 ballYDirection=-2;
                 barX= 310;
                 score=0;
-                bricks=54;
-                brickGenerator= new BrickGenerator(6,9);
+                bricks=24;
+                brickGenerator= new BrickGenerator(3,8);
                 repaint();
             }
         }
